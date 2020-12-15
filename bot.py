@@ -7,7 +7,7 @@ except ImportError: from yaml import Loader
 
 # load the config
 config = dict()
-with open('./config-actual.yml') as file:
+with open('./config.yml') as file:
     yml = yaml.load(file.read(), Loader=Loader)
     try:
         config['token'] = yml['Token']
